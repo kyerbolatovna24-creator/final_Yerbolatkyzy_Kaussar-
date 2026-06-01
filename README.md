@@ -2,8 +2,6 @@
 **Final Project for Databases Course** **Student:** Kaussar Yerbolatkyzy  
 **Target DB:** PostgreSQL  
 
----
-
 ## 1. Domain Description (Пәндік аймақты сипаттау)
 This project implements a relational database structure for a **Restaurant Management System**. The system is designed to automate and track core restaurant operations, ensuring smooth workflow management across several departments.
 
@@ -13,7 +11,6 @@ This project implements a relational database structure for a **Restaurant Manag
 * **Orders & Service:** When a customer dines, an `order` is created. Waitstaff and kitchen personnel (`personal`, categorized by their specific `post`) are assigned to orders through `order_personal`. Individual items in each order are tracked in `order_dish`.
 * **Billing:** Every finalized order goes through the financial logging system via the `payment` table.
 
----
 
 ## 2. Database Architecture (3NF Justification)
 The database layout strictly conforms to the **Third Normal Form (3NF)** to ensure zero data redundancy and maximum data integrity:
@@ -21,7 +18,6 @@ The database layout strictly conforms to the **Third Normal Form (3NF)** to ensu
 2.  **2NF:** The database is in 1NF, and all non-prime attributes are fully functionally dependent on the primary key (Composite keys in junction tables like `order_dish` and `composition_dish` are fully mapped).
 3.  **3NF:** There are no transitive dependencies. For instance, employee salary and position titles are isolated into the `post` lookup table rather than being duplicated in the `personal` table.
 
----
 
 ## 3. Script Structure & Specifications
 The accompanying SQL script (`02_final.sql`) is fully automated, idempotent, and designed to run cleanly multiple times.
@@ -32,8 +28,6 @@ The accompanying SQL script (`02_final.sql`) is fully automated, idempotent, and
 * **Advanced Features:** Implements a calculated field (`sum_dish`) using the `GENERATED ALWAYS AS ... STORED` engine.
 * **Data Quality:** populates 12 tables with at least 5 rows of realistic data (and exactly 10 rows for high-volume operational tables), using safe dynamic `SELECT` lookups for Foreign Keys.
 * **DCL Security:** Introduces role-based access control (`restaurant_db_readonly` and `restaurant_db_writer`) utilizing granular object privileges.
-
----
 
 ## 4. How to Run the Script (Нұсқаулық)
 
