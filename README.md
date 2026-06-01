@@ -1,4 +1,4 @@
-# Restaurant Management System 🍽️
+# Restaurant Management System 
 **Final Project for Databases Course** **Student:** Kaussar Yerbolatkyzy  
 **Target DB:** PostgreSQL  
 
