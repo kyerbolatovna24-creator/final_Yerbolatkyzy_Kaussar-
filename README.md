@@ -1,7 +1,7 @@
-Restaurant Management Database System
+🍽️ Restaurant Management Database System
 A complete PostgreSQL database solution designed to manage a restaurant's daily operations. This system handles seating tables, staff records, work shifts, menu items, customer orders, and sales tracking.
 
-Domain & Schema Description
+🗺️ Domain & Schema Description
 Database Name: restaurant_db
 
 Schema Name: restaurant_schema
@@ -19,7 +19,7 @@ Row line items (line_total) in order_items use exact math values (NUMERIC) inste
 
 Data Integrity Constraints: The schema enforces five types of custom constraints (non-negativity for cash values, range bounds for table sizes, and date barriers ensuring all system inputs are logged after 2026-01-01).
 
-How to Run the Script in DBeaver
+🚀 How to Run the Script in DBeaver
 Prerequisites
 PostgreSQL Server (v12 or higher recommended)
 
@@ -36,7 +36,7 @@ Execute the full script by clicking the Execute SQL Script button on the left to
 
 Re-runnability Verification: Click the Execute button a second time immediately. The script cleans old tables using conditional drops (DROP TABLE IF EXISTS ... CASCADE) and conditional data population checks (WHERE NOT EXISTS), running successfully with zero errors.
 
-Repository Contents
+📂 Repository Contents
 01_conceptual_erd.png - The Conceptual Entity-Relationship Diagram outlining high-level business entities and connections.
 
 _01_model-Logical Model (2).png - The detailed Logical Database Model showing data types, primary/foreign keys, and constraints.
