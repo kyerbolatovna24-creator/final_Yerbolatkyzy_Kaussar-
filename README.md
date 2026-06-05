@@ -26,7 +26,7 @@ A complete PostgreSQL database solution designed to manage a restaurant's daily 
 
 ### Execution Steps
 1. Open DBeaver and connect to your PostgreSQL database server.
-2. Open the script file **`02_finalll.sql`** (`File` -> `Open File...`).
+2. Open the script file **`02_final3.sql`** (`File` -> `Open File...`).
 3. Make sure your active connection dropdown at the top right of the script editor points to your PostgreSQL server.
 4. Execute the full script by clicking the **Execute SQL Script** button on the left toolbar (or press **Alt + X** / **Fn + Alt + X**).
 5. **Re-runnability Verification:** Click the Execute button a second time immediately. The script cleans old tables using conditional drops (`DROP TABLE IF EXISTS ... CASCADE`) and conditional data population checks (`WHERE NOT EXISTS`), running successfully with zero errors.
@@ -37,5 +37,5 @@ A complete PostgreSQL database solution designed to manage a restaurant's daily 
 
 * `01_conceptual_erd.png` - The Conceptual Entity-Relationship Diagram outlining high-level business entities and connections.
 * `_01_model-Logical Model (2).png` - The detailed Logical Database Model showing data types, primary/foreign keys, and constraints.
-* `02_finalll.sql` - The complete execution script containing DDL structures, constraints, dynamic data population, automated views, and role configurations.
+* `02_final3.sql` - The complete execution script containing DDL structures, constraints, dynamic data population, automated views, and role configurations.
 * `README.md` - Documentation of the project domain and setup instructions.
